@@ -50,7 +50,7 @@ footer{
 
 nav ul li a{
     color: white;
-    text-decoration: none;
+    text-decoration: none; /*remove underline from hyperlink*/
 }
 
 
@@ -62,3 +62,31 @@ nav ul li a{
     }
 }
 /*end mobile media screen*/
+/*tablet viewport*/
+@media screen and (min-width: 641px){
+
+    nav ul li{
+        display: inline-block; /*this list items horizontally and allows them to stretch*/
+        border-radius: 1em;
+    }
+}
+/*end of tablet viewport*/
+/* desktop view port */
+@media screen and (min-width: 961px){
+
+    header img{
+        width: auto;
+        height: 4.5em;
+    }
+    nav {
+        float: right; /*this floats the nav element to the right side of the page*/
+        margin-top: -4.7em; /*this moves the nav element above where it would normally be*/
+        width: 60%;
+    }
+
+    nav ul li{
+        display: inline-block; /*this list items horizontally and allows them to stretch*/
+        border-radius: 1em;
+    }
+}
+/*end of desktop viewport*/

@@ -7,9 +7,9 @@ header img{
     max-width: 800px;
 }
 nav{
-    background-color: cadetblue;
+    /*background-color: cadetblue;
     border-top: solid 0.3em black;
-    border-bottom: solid 0.3em black;
+    border-bottom: solid 0.3em black;*/
     border-radius: 1.0em; 
 
     font-weight: bold;
@@ -114,9 +114,9 @@ nav ul li a{
         display: inline-block; /*this list items horizontally and allows them to stretch*/
         border-radius: 1em;
     }
-    .desktop{
+    /*.desktop{
         display: none;
-    }
+    }*/
 
   
 }

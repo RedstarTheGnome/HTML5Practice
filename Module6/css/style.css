@@ -1,0 +1,9 @@
+header img{
+    width: 100%; /* this keeps the image 100% of the view port*/
+    height: auto; /*change the height depending on the view port*/
+
+}
+
+nav ul li {
+    list-style: none;
+}

@@ -6,12 +6,30 @@ header img{
     height: auto; /*change the height depending on the view port*/
     max-width: 800px;
 }
-
-nav ul li {
-    list-style: none; /*removes the bullet points form unordered list*/
+nav{
+    background-color: cadetblue;
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
-    border-radius: 1.0em; /* this rounds the corners on the element*/
+    border-radius: 1.0em; 
+
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul{
+    padding: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+nav ul li {
+    background-color: brown;
+    padding: 1em;
+    min-width: 12%;
+    margin: 0.25em;
+    list-style: none; /*removes the bullet points form unordered list*/
+
+
 }
 
 main{
@@ -19,6 +37,7 @@ main{
     border-bottom: solid 0.3em black;
     margin-bottom: 10px; /*adds margin space between elements */
     border-radius: 1.0em;
+    background-color: cadetblue;
 }
 
 
@@ -26,4 +45,13 @@ footer{
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
     border-radius: 1.0em;
+    background-color: cadetblue;
 }
+
+/*mobile media screen*/
+@media screen and (max-width: 640px) {
+    nav ul li {
+        border-radius: 1em;
+    }
+}
+/*end mobile media screen*/

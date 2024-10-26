@@ -32,6 +32,17 @@ nav ul li {
 
 }
 
+figure{
+    text-align: center;
+
+}
+figure img{
+    max-width: 800px;
+    max-height: 600px;
+    width: 100%;
+    height: auto;
+
+}
 main{
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
@@ -40,7 +51,27 @@ main{
     background-color: cadetblue;
 }
 
+main div .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
 
+main div .row.column{
+    float:left;
+}
+main div .row.column.left{
+    float: left;
+}
+
+
+main div .row.column.center{
+    padding: 10px;
+}
+
+main div .row.column.right{
+    float:right;
+}
 footer{
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
@@ -56,23 +87,28 @@ nav ul li a{
 
 
 /*mobile media screen*/
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639px) {
     nav ul li {
         border-radius: 1em;
+    }
+    .tablet{
+        display:none;
     }
 }
 /*end mobile media screen*/
 /*tablet viewport*/
-@media screen and (min-width: 641px){
+@media screen and (min-width: 640px){
 
     nav ul li{
         display: inline-block; /*this list items horizontally and allows them to stretch*/
         border-radius: 1em;
     }
+
+  
 }
 /*end of tablet viewport*/
 /* desktop view port */
-@media screen and (min-width: 961px){
+@media screen and (min-width: 960px){
 
     header img{
         width: auto;

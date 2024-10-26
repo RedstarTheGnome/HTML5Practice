@@ -1,23 +1,29 @@
+body{
+    background-image: linear-gradient(white, black) ;
+}
 header img{
     width: 100%; /* this keeps the image 100% of the view port*/
     height: auto; /*change the height depending on the view port*/
-
+    max-width: 800px;
 }
 
 nav ul li {
-    list-style: none;
+    list-style: none; /*removes the bullet points form unordered list*/
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
+    border-radius: 1.0em; /* this rounds the corners on the element*/
 }
 
 main{
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /*adds margin space between elements */
+    border-radius: 1.0em;
 }
 
 
 footer{
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
+    border-radius: 1.0em;
 }

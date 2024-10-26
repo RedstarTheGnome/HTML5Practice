@@ -1,6 +1,10 @@
 h2 {
     color: white;
     background-color: red;
+    font-family: Arial, "comic sands", Calibri;
+    font-size: 3em;
+    text-align: center; /*this will help to align elements*/
+    
 }
 
 #container {
@@ -10,4 +14,15 @@ h2 {
 
 .accent {
     background-color: yellow;
+    color: gray;
 }
+
+body main div {
+    color: white;
+}
+
+#divelement {
+    background-color: #0c2525;
+
+}
+

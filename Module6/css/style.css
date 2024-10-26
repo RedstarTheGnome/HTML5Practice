@@ -48,6 +48,13 @@ footer{
     background-color: cadetblue;
 }
 
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
 /*mobile media screen*/
 @media screen and (max-width: 640px) {
     nav ul li {

@@ -1,3 +1,13 @@
 h2 {
     color: white;
+    background-color: red;
+}
+
+#container {
+    color: yellow;
+
+}
+
+.accent {
+    background-color: yellow;
 }

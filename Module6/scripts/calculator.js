@@ -19,12 +19,11 @@ function input(num){
         else{
             document.getElementById('result').value += num;
         }
+        decimalCount ++ ;
+
+        document.getElementById('decimalVar').value = decimalCount;
         
     }
-
-    decimalCount ++ ;
-
-    document.getElementById('decimalVar').value = decimalCount;
 }
 
 function opperandCheck(){

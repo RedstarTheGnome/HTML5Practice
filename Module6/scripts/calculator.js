@@ -1,11 +1,30 @@
 function input(num){
     equivalentCheck();
-    if (document.getElementById('result').value == 0){
-        document.getElementById('result').value = num;
+
+    let y = parseFloat(document.getElementById('result').value);
+
+    if (document.getElementById('decimalVar').value == 0){
+        num += y * 10; //multiply the text input by 10 and add the value of num
+        document.getElementById('result').value = num; 
+
     }
-    else{
-        document.getElementById('result').value += num;
+    else{ // if decimal is true
+        let decimalCount = parseInt(document.getElementById('decimalVar').value);
+
+        if(decimalCount == 1){
+            num *= 1/10; // using math to place the decimal point
+            y += num;
+            document.getElementById('result').value = y;
+        }
+        else{
+            document.getElementById('result').value += num;
+        }
+        
     }
+
+    decimalCount ++ ;
+
+    document.getElementById('decimalVar').value = decimalCount;
 }
 
 function opperandCheck(){
@@ -93,6 +112,16 @@ function equals(){
 function equivalentCheck(){// this allow the last value to remain in view until other buttons are pressed
     if (parseInt(document.getElementById('equivalent').value)){
         document.getElementById('equivalent').value = 0;
+        document.getElementById('result').value = 0;
+    }
+}
+
+function decimalP(){
+    if(document.getElementById('decimalVar').value == 0){ // prevents multipul decimal points
+        document.getElementById('decimalVar').value == 1;
+    }
+
+    if (parseInt(document.getElementById('operation').value)){ // if this is an empty string, it will return false
         document.getElementById('result').value = 0;
     }
 }

@@ -22,8 +22,45 @@
        
     </nav>
     <main>
-        <p>some text in the main</p>
-        
+        <lable for="firstname"> first name </lable>
+        <input type="text" id="firstname" name="firstname"><br>
+
+        <lable for="lastname">last name </lable>
+        <input type="text" id="lastname" name="lastname"><br>
+
+        <lable for ="email"> Email</lable>
+        <input type="email" id="email" name="email"><br> <!-- input type will expect an email @-->
+
+        <lable for="phone">Phone</lable>
+        <input type="tel" id="phone" name="phone"><br> <!-- expect a phone number in type-->
+
+        <table id="enrollprice">
+            <caption>Enroll</caption>
+            <tr>
+                <td>Adult</td>
+                <td>£50</td>
+                <td><input type="radio" id="adult" value="50" name="course"></td>
+            </tr>
+            <tr>
+                <td>Teen</td>
+                <td>£100</td>
+                <td><input type="radio" id="teen" value="100" name="course"></td>
+            </tr>
+            <tr>
+                <td>Child</td>
+                <td>£150</td>
+                <td><input type="radio" id="child" value="150" name="course"></td>
+            </tr>
+
+            <tr>
+                <td>Uniforms</td>
+                <td>£50</td>
+                <td><input type="number" id="uniforms" min="0" value="0"></td>
+            </tr>
+
+        </table>
+        <input type="submit" id="submit" value="Submit"><br>
+        <input type="reset" id="reset" value="Reset"><br>    
     </main>
     <footer>
         <p> some text in the footer</p>

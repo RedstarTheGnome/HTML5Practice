@@ -116,6 +116,17 @@ nav ul li a{
 
 /*end table layout*/
 
+#enrollprice{
+    border: 0.1em solid red;
+    border-collapse: collapse;
+
+}
+#enrollprice td{
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+
 /*mobile media screen*/
 @media screen and (max-width: 639px) {
     nav ul li {

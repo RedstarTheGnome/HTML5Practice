@@ -50,7 +50,7 @@ main{
     border-radius: 1.0em;
     background-color: cadetblue;
 }
-
+/* three column layout*/
 main .row:after{
     content: "";
     display: table;
@@ -79,6 +79,7 @@ main div .right{
     width: 30%;
     border-left: 3px solid #000000;
 }
+/*end three colum layout*/
 footer{
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
@@ -90,8 +91,30 @@ nav ul li a{
     color: white;
     text-decoration: none; /*remove underline from hyperlink*/
 }
+/*schedule table layout */
+.schedule table{
+    border: 0.1em solid black;
+    width: 95%;
+    background-color: white;
+    border-collapse: collapse;
+    margin-left: 2.5%;
+}
+.schedule caption{
+    border: 0.1em solid black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.schedule th, td{
+    border: .1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+.schedule th{
+    background-color: #000000;
+    color: white;
+}
 
-
+/*end table layout*/
 
 /*mobile media screen*/
 @media screen and (max-width: 639px) {
@@ -120,6 +143,13 @@ nav ul li a{
 
   
 }
+
+
+
+
+
+
+
 /*end of tablet viewport*/
 /* desktop view port */
 @media screen and (min-width: 960px){
